@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.mobilliumtask.view.home.HomeFragment"
+        tools:layout="@layout/fragm_home"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_productListFragment"
+            app:destination="@id/productListFragment">
+        </action>
+        <action
+            android:id="@+id/action_homeFragment_to_collectionListFragment"
+            app:destination="@id/collectionListFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_shopListFragment"
+            app:destination="@id/shopListFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/productListFragment"
+        tools:layout="@layout/fragm_product_list"
+        android:name="com.example.mobilliumtask.view.product.ProductListFragment"
+        android:label="ProductListFragment" >
+        </fragment>
+    <fragment
+        android:id="@+id/collectionListFragment"
+        tools:layout="@layout/fragm_collection_list"
+        android:name="com.example.mobilliumtask.view.collection.CollectionListFragment"
+        android:label="CollectionListFragment" />
+    <fragment
+        android:id="@+id/shopListFragment"
+        tools:layout="@layout/fragm_shop_list"
+        android:name="com.example.mobilliumtask.view.shop.ShopListFragment"
+        android:label="ShopListFragment" />
+
+</navigation>

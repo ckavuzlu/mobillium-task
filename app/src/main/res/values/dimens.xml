@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="card_margin">4dp</dimen>
+    <dimen name="card_corner_radius">8dp</dimen>
+
+    <dimen name="margin_2">2dp</dimen>
+    <dimen name="margin_4">4dp</dimen>
+    <dimen name="margin_8">8dp</dimen>
+    <dimen name="margin_16">16dp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="margin_32">32dp</dimen>
+    <dimen name="margin_64">64dp</dimen>
+
+    <dimen name="product_text_size">16sp</dimen>
+    <dimen name="product_definition_text_size">18sp</dimen>
+    <dimen name="product_title_text_size">24sp</dimen>
+    <dimen name="old_price_text_size">14sp</dimen>
+    <dimen name="editor_shop_title_text_size">18sp</dimen>
+    <dimen name="editor_shop_definition_text_size">16sp</dimen>
+    <dimen name="home_page_title_text_size">18sp</dimen>
+    <dimen name="basket_text_size">12sp</dimen>
+    <dimen name="subs_text_size">12sp</dimen>
+    <dimen name="new_card_title_text_size">18sp</dimen>
+    <dimen name="new_card_def_text_size">16sp</dimen>
+
+    <dimen name="new_shop_view_pager_height">350dp</dimen>
+    <dimen name="view_pager_height">200dp</dimen>
+
+    <dimen name="recycler_products_height">265dp</dimen>
+    <dimen name="recycler_category_height">130dp</dimen>
+    <dimen name="recycler_collection_height">350dp</dimen>
+
+    <dimen name="card_category_width">100dp</dimen>
+    <dimen name="card_category_height">100dp</dimen>
+
+    <dimen name="product_image_height">150dp</dimen>
+    <dimen name="product_card_width">150dp</dimen>
+    <dimen name="product_card_height">230dp</dimen>
+    <dimen name="product_text_shop_size">16sp</dimen>
+    <dimen name="product_text_name_size">16sp</dimen>
+
+
+    <dimen name="card_collection_width">300dp</dimen>
+    <dimen name="card_editor_shop_height">300dp</dimen>
+    <dimen name="shop_circle_logo_size">50dp</dimen>
+    <dimen name="editor_shop_inside_card_height">250dp</dimen>
+    <dimen name="shop_image_size">50dp</dimen>
+    <dimen name="card_editor_button_width">200dp</dimen>
+    <dimen name="card_new_shop_size">300dp</dimen>
+    <dimen name="new_shop_inside_card_height">260dp</dimen>
+    <dimen name="new_shop_image_height">160dp</dimen>
+    <dimen name="new_shop_logo_size">40dp</dimen>
+    <dimen name="small_basket_item">20dp</dimen>
+    <dimen name="small_basket_size">20dp</dimen>
+    <dimen name="indicator_height">48dp</dimen>
+
+    <!-- Main Activity -->
+    <dimen name="toolbar_height">60dp</dimen>
+    <dimen name="small_icon_widht">30dp</dimen>
+    <dimen name="small_icon_height">30dp</dimen>
+
+</resources>

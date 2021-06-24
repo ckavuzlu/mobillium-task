@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_product"
+    android:layout_width="@dimen/product_card_width"
+    android:layout_height="@dimen/product_card_height"
+    android:layout_marginStart="@dimen/margin_16"
+    android:layout_marginTop="@dimen/margin_16"
+    android:layout_marginBottom="@dimen/margin_16"
+    android:elevation="2dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="@dimen/card_corner_radius">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_product"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/product_image_height"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@android:color/holo_blue_bright" />
+
+        <TextView
+            android:id="@+id/txt_product_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_8"
+            android:layout_marginTop="@dimen/margin_8"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/product_text_name_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/img_product"
+            tools:text="Göz Küpe" />
+
+        <TextView
+            android:id="@+id/txt_product_shop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_8"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/product_text_shop_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/txt_product_name"
+            app:layout_constraintTop_toBottomOf="@id/txt_product_name"
+            tools:text="Menessa" />
+
+
+        <View
+            android:id="@+id/view_bottom"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/transparent_gray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_product_shop" />
+
+
+        <TextView
+            android:id="@+id/txt_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_8"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/product_text_shop_size"
+            app:layout_constraintBottom_toBottomOf="@id/view_bottom"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/view_bottom"
+            tools:text="28 TL" />
+
+        <TextView
+            android:id="@+id/txt_price_old"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/old_price_text_size"
+            app:layout_constraintBottom_toBottomOf="@id/txt_price"
+            app:layout_constraintStart_toEndOf="@id/txt_price"
+            app:layout_constraintTop_toTopOf="@id/txt_price"
+            tools:text="@string/old_price" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/card_new_shop_size">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_main"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/new_shop_inside_card_height"
+        android:layout_marginStart="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_32"
+        android:layout_marginEnd="@dimen/margin_16"
+        android:layout_marginBottom="@dimen/margin_16"
+        app:cardCornerRadius="@dimen/card_corner_radius"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_image"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/new_shop_image_height"
+        app:cardCornerRadius="@dimen/card_corner_radius"
+        app:layout_constraintEnd_toEndOf="@id/cardview_main"
+        app:layout_constraintStart_toStartOf="@id/cardview_main"
+        app:layout_constraintTop_toTopOf="@id/cardview_main">
+
+        <ImageView
+            android:id="@+id/img_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="3dp"
+            android:scaleType="centerCrop"
+            tools:src="@color/black" />
+    </androidx.cardview.widget.CardView>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_logo"
+        android:layout_width="@dimen/new_shop_logo_size"
+        android:layout_height="@dimen/new_shop_logo_size"
+        android:layout_marginStart="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_16"
+        android:elevation="3dp"
+        app:layout_constraintStart_toStartOf="@id/cardview_main"
+        app:layout_constraintTop_toBottomOf="@id/cardview_image"
+        tools:src="@color/purple_500" />
+
+    <TextView
+        android:id="@+id/txt_shop_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_16"
+        android:elevation="3dp"
+
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:textSize="@dimen/new_card_title_text_size"
+        app:layout_constraintEnd_toEndOf="@id/cardview_main"
+        app:layout_constraintStart_toEndOf="@id/img_logo"
+        app:layout_constraintTop_toTopOf="@id/img_logo"
+        tools:text="Laricca Daslşdasşldkaşsldkşalskdlşaksşldkasşldaksdşalsşdkşesign" />
+
+    <TextView
+        android:id="@+id/txt_shop_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_16"
+        android:elevation="3dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textAlignment="center"
+        android:textSize="@dimen/new_card_def_text_size"
+        app:layout_constraintEnd_toEndOf="@id/cardview_main"
+        app:layout_constraintStart_toEndOf="@id/img_logo"
+        app:layout_constraintTop_toBottomOf="@id/txt_shop_title"
+        tools:text="Laricca Design stilinizi destekleyen, minimalist ve zarif tasarımalr sunar" />
+
+    <ImageView
+        android:id="@+id/img_item_count"
+        android:layout_width="@dimen/small_basket_size"
+        android:layout_height="@dimen/small_basket_size"
+        android:layout_marginStart="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_8"
+        android:elevation="3dp"
+        android:src="@drawable/red_clothes_icon"
+        app:layout_constraintStart_toEndOf="@id/img_logo"
+        app:layout_constraintTop_toBottomOf="@id/txt_shop_description" />
+
+    <TextView
+        android:id="@+id/txt_item_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_8"
+        android:elevation="3dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/basket_text_size"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/img_item_count"
+        app:layout_constraintStart_toEndOf="@id/img_item_count"
+        app:layout_constraintTop_toTopOf="@id/img_item_count"
+        tools:text="5 Ürün" />
+
+    <Button
+        android:id="@+id/btn_subscribe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_8"
+        android:backgroundTint="@color/white"
+        android:elevation="3dp"
+        android:paddingStart="@dimen/margin_8"
+        android:paddingEnd="@dimen/margin_8"
+        android:text="@string/subscribe"
+        android:textColor="@color/black"
+        android:textSize="@dimen/subs_text_size"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/cardview_image"
+        app:layout_constraintEnd_toEndOf="@id/cardview_main"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="@id/cardview_main" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Mobillium Task</string>
+    <string name="old_price"><strike>34 TL</strike> </string>
+    <string name="go_window">Vitrine Git</string>
+    <string name="error">Hata</string>
+    <string name="error_message">Bir hata ile karşılaşıldı. App Başlatılamıyor.</string>
+    <string name="ok">Tamam</string>
+    <string name="emptyList">Empty List</string>
+    <string name="item_count">%1$d ÜRÜN</string>
+    <string name="search_bar_hint">Ürün veya vitrin ara</string>
+    <string name="subscribe">Takip Et</string>
+    <string name="see_all"><![CDATA[TÜMÜ >]]></string>
+
+</resources>
